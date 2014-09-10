@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
   color: #333;
   font-family: 'PT Sans', sans-serif;
-  font-size: medium;
+  font-size: 62.5%;
 }
 body div#line {
   width: 100%;
@@ -18,29 +18,32 @@ hr {
   background-color: #eeeeee;
   height: 1px;
   border: none;
+  margin: 0;
 }
-aside h2 {
-  font-size: 280%;
+body aside h2 {
+  font-size: 5em;
 }
 aside h2:first-letter{
   color:red;
 }
 aside div#user_meta {
   margin: 0;
-  padding: 40px;
+  padding: 4em;
   text-align: center;
 }
 aside div#user_meta p {
-  margin: 0 0 15px 0;
+  margin: 2em 0 0 0;
+  font-size: 1.4em;
 }
 aside div#user_meta ul {
-  margin: 40px 0 0 0;
+  margin: 4em 0 0 0;
   padding-left: 0;
   list-style-type: none;
 }
 aside div#user_meta ul li {
   display: inline;
   line-height: 2.5em;
+  font-size: 1.6em;
 }
 aside div#user_meta ul li a {
   padding: 4px 10px 4px 10px;
@@ -57,24 +60,26 @@ aside div#user_meta ul li a:hover {
   background-color:#0e94ec;
 }
 aside div#user_meta p a {
-  font-size:small;
-  padding: 2px 5px 2px 5px;
-  border: 2px solid #0e94ec;
-  border-radius: 12px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  color: #0e94ec;
+  display: inline-block;
+  margin: .5em 0 0 .2em ;
+  padding: 3px 6px 3px 6px;
+  border: 2px solid DarkSeaGreen;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: DarkSeaGreen;
   font-weight:bold;
 }
 aside div#user_meta p a:hover {
   font-weight:bold;
-  color:white;
-  background-color:#0e94ec;
+  color: Sienna;
+  background-color: PaleGoldenrod;
 }
 main header {
-  padding: 40px;
+  padding: 2.5em;
   border-top: #eeeeee 1px solid;
   border-bottom: #eeeeee 1px solid;
+  font-size: 1.6em;
 }
 main header p {
   font-weight: bold;
@@ -86,17 +91,19 @@ main header a:hover {
 main article {
   max-width: 640px;
   padding: 40px;
+  overflow: auto;
 }
 main article div.article_title {
   margin-bottom: 1em;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 main article div.article_title a:hover {
   color: #0e94ec;
 }
 main article div.article_text {
-  line-height: 1.375em;
+  line-height: 1.4em;
+  font-size: large;
 }
 main article div.article_text a {
   text-decoration: underline;
@@ -171,7 +178,7 @@ main div#ending_message {
     border-right: #eeeeee 1px solid;
   }
   aside h2 {
-    margin: 10px 0 0 0;
+    margin: .2em 0 0 0;
   }
   aside div#user_meta {
     text-align: right;
