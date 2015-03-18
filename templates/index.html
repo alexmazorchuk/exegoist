@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<ul class="small-block-grid-1 large-block-grid-3">
+{% for article in articles_page.object_list %}
+<li>
+<h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+{% if  article.featured_image %}
+    <img src="{{ article.featured_image }}">
+{% endif %}
+<p>{{ article.summary }}</p>
+</li>
+{% endfor %}
+</ul>
+{% endblock content %}

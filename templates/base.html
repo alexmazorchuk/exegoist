@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css" />
+    <script src="{{ SITEURL }}/theme/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+  <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+          <li class="name"><h1><a href="/">{{ SITENAME }}</a></h1></li>
+      </ul>
+  </nav>
+  <div class="raw">
+      <div class="large-10 large-centered columns">
+      {% block content %}{% endblock content %}
+      </div>
+  </div>
+    <script src="{{ SITEURL }}/theme/js/vendor/jquery.js"></script>
+    <script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
