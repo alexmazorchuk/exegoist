@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css" />
     <script src="{{ SITEURL }}/theme/js/vendor/modernizr.js"></script>
   </head>
   <body>
+  <div class="sticky">
   <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
           <li class="name"><h1><a href="/">{{ SITENAME }}</a></h1></li>
       </ul>
   </nav>
+  </div>
   <div class="raw">
-      <div class="large-10 large-centered columns">
+      <div class="large-10 large-centered small-12 columns">
       {% block content %}{% endblock content %}
       </div>
   </div>

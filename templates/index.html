@@ -1,13 +1,15 @@
 {% extends "base.html" %}
+{% block title %}{{ SITENAME }}{% endblock title %}
 {% block content %}
 <ul class="small-block-grid-1 large-block-grid-3">
 {% for article in articles_page.object_list %}
 <li>
 <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
 {% if  article.featured_image %}
-    <img src="{{ article.featured_image }}">
+<a href="{{ article.url }}"><img src="{{ article.featured_image }}"></a>
 {% endif %}
 <p>{{ article.summary }}</p>
+<hr/>
 </li>
 {% endfor %}
 </ul>
